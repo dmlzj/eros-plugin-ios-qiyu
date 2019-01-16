@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   s.frameworks      = 'UIKit','AVFoundation','MobileCoreService','CoreText','CoreTelephony','SystemConfiguration','CoreMedia','AudioToolbox','Photos','AssetsLibrary','CoreMotion'
-  s.libraries       = 'libz','libc++','ibsqlite3.0','libxml2'
+  s.libraries       = 'z','c++','sqlite3.0','xml2'
   s.dependency "QIYU_iOS_SDK"
   s.xcconfig = {
     'VALID_ARCHS' =>  'arm64 x86_64',
