@@ -62,7 +62,12 @@ WX_EXPORT_METHOD(@selector(chat:));
     
     [_sessionViewController dismissViewControllerAnimated:YES completion:nil];
 }
-
+// 用户退出app的时候必须注销会话
+WX_EXPORT_METHOD(@selector(logout));
+-(void)logout
+{
+ [[QYSDK sharedSDK] logout:^{}];
+}
 WX_EXPORT_METHOD(@selector(getCount:));
 //获取未读数量
 -(void)getCount:(WXModuleCallback)callback

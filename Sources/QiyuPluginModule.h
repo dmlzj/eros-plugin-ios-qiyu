@@ -15,4 +15,5 @@
 
 - (void)getLastMessage:(WXModuleCallback)callback;
 
+- (void)logout;
 @end
