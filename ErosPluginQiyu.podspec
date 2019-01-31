@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "ErosPluginQiyu"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "Eros QiYu Plugin"
   s.static_framework = true
 
@@ -28,8 +28,5 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   s.dependency "QIYU_iOS_SDK"
-  s.xcconfig = {
-    'VALID_ARCHS' =>  'arm64 x86_64',
-  }
-end
+  end
 
