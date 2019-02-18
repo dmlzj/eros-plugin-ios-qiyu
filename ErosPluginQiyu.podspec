@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "ErosPluginQiyu"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "Eros QiYu Plugin"
   s.static_framework = true
 

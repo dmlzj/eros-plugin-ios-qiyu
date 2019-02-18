@@ -66,7 +66,7 @@ WX_EXPORT_METHOD(@selector(chat:));
 WX_EXPORT_METHOD(@selector(logout));
 -(void)logout
 {
- [[QYSDK sharedSDK] logout:^{}];
+ [[QYSDK sharedSDK] logout:^(BOOL success) {}];
 }
 WX_EXPORT_METHOD(@selector(getCount:));
 //获取未读数量
